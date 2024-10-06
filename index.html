@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+       li {
+            cursor: pointer; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            margin: 5px 0; 
+        }
+
+        li:hover {
+            background-color: #e0e0e0; 
+        }
+        input:disabled{
+          cursor: not-allowed;
+        }
+        input{
+          cursor: text;
+        }
+  </style>
+  <body>
+    <h1>TRABAJO PRACTICO 3</h1>
+    <div>
+      <p class="parrafo">Este es el primer párrafo</p>
+      <p class="parrafo">Este es el segundo párrafo</p>
+      <p class="parrafo">Este es el tercer párrafo</p>
+      <button id="buttonChanger">Cambiar a color azul</button>
+    </div>
+
+    <div>
+      <h2>Formulario con alerta</h2>
+      
+        <label for="texto">Ingresa un texto:</label>
+        <input type="text" id="texto" name="texto" required>
+        <button id="botton2" type="submit">Mostrar alerta</button>
+     
+      
+    </div>
+
+    <div>
+      <h2>Lista de elementos con alerta</h2>
+      
+      <ul >
+        <li id="el1">Elemento 1</li>
+        <li id="el2">Elemento 2</li>    
+        <li id="el3">Elemento 3</li>  
+        <li id="el4">Elemento 4</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Campo de texto y botones</h2>
+
+      
+      <input type="text" id="texto2" placeholder="Ingresa algo" >
+      <button id="botton3">Deshabilitar campo</button>
+      <button id="botton4">Habilitar campo</button>
+    </div>
+
+    <div>
+      <label for="texto">Correo electronico:</label>
+      <input type="text" id="texto5" name="texto" required>
+      <button id="boton5">Guardar Correo</button>
+      <p id="resultado"></p>
+      <button id="boton6">Eliminar Correo Guardado</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
